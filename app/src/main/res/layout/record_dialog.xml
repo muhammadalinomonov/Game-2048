@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your top records:"
+        android:textColor="#812D2D"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/first"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/title"
+
+        android:layout_marginStart="10dp"
+        android:src="@drawable/first"
+        android:textColor="#812D2D"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:layout_alignTop="@+id/first"
+        android:layout_alignBottom="@+id/first"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+
+        android:text="0"
+        android:textColor="#812D2D"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_first"
+
+
+        android:layout_alignStart="@+id/first"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/secord" />
+
+    <TextView
+        android:id="@+id/txt_second"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/second"
+        android:textColor="#812D2D"
+        android:layout_alignEnd="@+id/txt_first"
+        android:layout_alignBottom="@+id/second"
+
+        android:text="0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <ImageView
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/third"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/second"
+
+
+        android:layout_alignStart="@+id/second"
+
+        android:src="@drawable/third" />
+
+    <TextView
+        android:id="@+id/txt_third"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/third"
+        android:textColor="#812D2D"
+        android:layout_alignEnd="@+id/txt_first"
+        android:layout_alignBottom="@+id/third"
+
+        android:text="0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txt_third"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A9F4"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#03A9F4"
+            android:gravity="center"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<Button
+        android:id="@+id/btn_restart"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/third"
+        android:layout_alignEnd="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="141dp"
+        android:backgroundTint="#03A9F4"
+        android:padding="4dp"
+        android:text="Home"
+        android:textColor="@color/white" />-->
+
+
+</RelativeLayout>
